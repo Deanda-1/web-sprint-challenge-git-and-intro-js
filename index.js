@@ -360,11 +360,16 @@ Use artistByCountry to do the following:
 🌟 EXAMPLE: Invoking artistByCountry(artists, 'Spanish') will return: [ 'Salvador Dali', 'Pablo Picasso', 'Francisco Goya']
 */
 
-function artistByCountry(/*Your Code Here*/){
-  /*Your Code Here*/
+function artistByCountry(artists, nationality) {
+  let result = []
+  for (let i = 0; i < artists.length; i++) {
+    if (artists[i].nationality === nationality) {
+      result.push(artists[i].name);
+    }
+  }
+  return result;
 }
-
-
+console.log(artistByCountry(artists, 'Spanish'));
 
 /* ***** END OF TASKS ***** */
 
