@@ -245,9 +245,15 @@ Use listOfNames to do the following:
 🌟 EXAMPLE of return: ["Amedeo Modigliani", "Vasiliy Kandinskiy", "Diego Rivera"....]
 */
 
-function listOfNames(/*Your Code Here*/) {
-  /*Your Code Here*/
+function listOfNames(artists) {
+let newArr = []
+for (let i = 0; i < artists.length; i++) {
+  let newIndex = artists[i].name
+  newArr.push(newIndex);
 }
+return newArr;
+}
+console.log(listOfNames(artists));
 
 
 
